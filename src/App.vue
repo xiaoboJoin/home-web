@@ -5,7 +5,7 @@
       <router-link to="/example">example</router-link>
       <router-link to="/helloworld">helloworld</router-link>
     </header>
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
 </template>
