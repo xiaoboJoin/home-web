@@ -2,7 +2,12 @@
   <div id="example">
     <p>Original message: "{{ message }}"</p>
     <input placeholder="Enter your username" v-model="name"></input>
-
+    <div id="databinding">
+      <button v-on:click="show = !show">点我</button>
+      <transition name="slide-fade">
+        <p v-show="show" v-bind:style="styleobj">动画实例</p>
+      </transition>
+    </div>
     <p>Computed reversed message: "{{ reversedMessage }}"</p>
     <p>{{msg}}</p>
     <router-link to="/home">About</router-link>
@@ -38,6 +43,7 @@
     <p>The button above has been clicked {{ counter }} times.</p>
     <textarea v-model="lines" placeholder="add multiple lines"></textarea>
     <p>{{lines}}</p>
+
   </div>
 </template>
 
@@ -47,12 +53,17 @@ export default {
   data() {
     return{
       name:'',
+      styleobj :{
+            fontSize:'30px',
+            color:'red'
+        },
       checked:true,
       lines:"",
       message: 'Welcome to Your Vue.js App',
       msg:'a',
       counter:1,
       ok:false,
+      show:true,
       loginType:"username",
       student:{
         name:"jack",
@@ -100,6 +111,19 @@ export default {
 }
 </script>
 <style>
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active 用于 2.1.8 以下版本 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 #example {
     background-color: white;
 }
