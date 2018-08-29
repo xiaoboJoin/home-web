@@ -4,8 +4,8 @@
         <h2>Ecosystem</h2>
         <ul>
             <li v-for="item in webs">
-                <img src="../assets/logo.png" />
-                <a :href=item.url target="_blank"> {{item.title}}
+                <img v-bind:src="item.logo" width="60" height="60" />
+                <a :href=item.url target="_blank"> {{item.name}}
                 </a>
             </li>
         </ul>
@@ -14,64 +14,13 @@
 </template>
 
 <script>
+import images from './data.json'
 export default {
   name: 'Home',
   data () {
     return {
       msg: '首页',
-      webs:[{
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-        {
-        title:"vuejs",
-        url:"http://vuex.vuejs.org/"
-        },
-      ]
+      webs:images
     }
   }
 }

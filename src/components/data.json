@@ -1,7 +1,7 @@
-{
-    data:[{
-        name:'',
-        url:'',
-        logo:'',
-    }]
-}
+[
+  {
+    "name": "36kr",
+    "url": "http://36kr.com",
+    "logo": "../../static/36kr.png"
+  }
+]
