@@ -8,5 +8,30 @@
     "name": "少数派",
     "url": "https://sspai.com/",
     "logo": "static/shaoshupai.png"
+  },
+  {
+    "name": "虎嗅",
+    "url": "https://www.huxiu.com/",
+    "logo": "static/huxiu.png"
+  },
+  {
+    "name": "界面",
+    "url": "https://www.jiemian.com/",
+    "logo": "static/jiemian.png"
+  },
+  {
+    "name": "艾瑞网",
+    "url": "http://www.iresearch.cn/",
+    "logo": "static/airui.png"
+  },
+  {
+    "name": "我是产品",
+    "url": "http://www.woshipm.com/",
+    "logo": "static/renren.png"
+  },
+  {
+    "name": "华尔街见闻",
+    "url": "https://wallstreetcn.com/",
+    "logo": "static/wallstreet.png"
   }
 ]
