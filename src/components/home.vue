@@ -4,15 +4,16 @@
         <h2>Ecosystem</h2>
         <ul>
             <li v-for="item in webs">
-                <img v-bind:src="item.logo" width="60" height="60" />
-                <a :href=item.url target="_blank"> {{item.name}}
-                </a>
+                <div class="item" @click="tap(item)">
+                    <img v-bind:src="item.logo" width="80" height="80" />
+                    <a class="name" :href=item.url> {{item.name}}</a>
+                </div>
+
             </li>
         </ul>
         <a href="">Vue</a>
     </div>
 </template>
-
 <script>
 import images from './data.json'
 export default {
@@ -20,9 +21,18 @@ export default {
   data () {
     return {
       msg: '首页',
-      webs:images
+      webs:require("./data.json")
     }
+  },
+  methods:{
+      tap:function(item){
+        //    window.location.href = item.url;
+        window.open(item.url)
+
+      }
+
   }
+  
 }
 </script>
 
@@ -39,13 +49,25 @@ ul {
 li {
     flex-direction: column;
     display: inline-block;
-    margin: 0 10px;
+    margin: 40px 40px;
 }
 a {
-    color: #42b983;
+    color: #666666;
+    font-size: 24pt;
+    font-weight: bold;
 }
 img {
-    height: 120;
-    width: 120;
+    height: 240;
+    width: 240;
+    border-radius: 80px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 24px;
+    text-decoration: none;
 }
 </style>

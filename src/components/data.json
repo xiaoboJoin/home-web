@@ -2,6 +2,11 @@
   {
     "name": "36kr",
     "url": "http://36kr.com",
-    "logo": "../../static/36kr.png"
+    "logo": "static/36kr.png"
+  },
+  {
+    "name": "少数派",
+    "url": "https://sspai.com/",
+    "logo": "static/shaoshupai.png"
   }
 ]
