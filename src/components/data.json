@@ -33,5 +33,33 @@
     "name": "华尔街见闻",
     "url": "https://wallstreetcn.com/",
     "logo": "static/wallstreet.png"
+  },
+  {
+    "name": "聚合数据",
+    "url": "https://www.juhe.cn/"
+  },
+  {
+    "name": "经济观察报",
+    "url": "http://www.eeo.com.cn/"
+  },
+  {
+    "name": "淘宝数据",
+    "url": "https://shu.taobao.com/"
+  },
+  {
+    "name": "IT桔子",
+    "url": "https://www.itjuzi.com/"
+  },
+  {
+    "name": "前瞻",
+    "url": "www.qianzhan.com"
+  },
+  {
+    "name": "第一财经数据中心",
+    "url": "https://www.cbndata.com/home"
+  },
+  {
+    "name": "鲸准",
+    "url": "https://www.jingdata.com"
   }
 ]
