@@ -77,5 +77,9 @@
   {
     "name": "infoQ",
     "url": "https://www.infoq.com/"
+  },
+  {
+    "name": "wind",
+    "url": "http://www.wind.com.cn/"
   }
 ]
